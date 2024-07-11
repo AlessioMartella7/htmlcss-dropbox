@@ -115,3 +115,30 @@ li {
     width: 80%;
     margin-bottom: 10px;
 }
+
+/* Main content  */
+
+.main-content{
+    margin-top: 80px;
+}
+
+.bus-plan {
+    background-color: chartreuse;
+}
+
+.row {
+    justify-content: center;
+    flex-wrap: wrap;   
+    gap: 20px;
+}
+
+.col {
+
+    height: 400px;
+    flex-basis: calc(100%/3 - 40px / 3);
+    
+}
+
+.col:last-child{
+    flex-grow: 1;
+}
