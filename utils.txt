@@ -23,9 +23,6 @@
 /* bicycle */
 #D5001F
 
-
-#B4D0E7
-
 /* lonely planet */
 #0D2481
 
