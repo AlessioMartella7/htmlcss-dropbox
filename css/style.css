@@ -45,6 +45,10 @@ li {
     display: flex;
 }
 
+.mrgt-l{
+    margin-top: 100px;
+}
+
 /* barra navigazione */
 .header-bg {
     background-color: #B4D0E7;
@@ -118,10 +122,6 @@ li {
 
 /* Main content  */
 
-.main-content{
-    margin-top: 80px;
-}
-
 .bus-plan {
     background-color: chartreuse;
 }
@@ -141,4 +141,16 @@ li {
 
 .col:last-child{
     flex-grow: 1;
+}
+
+/* sezione Trova partner */
+
+.img-prov2 {
+    height: 400px;
+    flex-basis: 60%;
+    background-color: aqua;
+}
+.testo-trova {
+    flex-basis: 40%;
+    background-color: cadetblue;
 }
