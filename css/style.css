@@ -21,7 +21,15 @@ footer a {
     text-decoration: none;
     color: #fff;
 }
+
+li {
+    list-style-type: none;
+}
 /* Utilities */
+
+.br-bl {
+    border: 1px dashed black;
+}
 
 .container {
     max-width: 1000px;
@@ -31,4 +39,79 @@ footer a {
 .container2 {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.disp-flex {
+    display: flex;
+}
+
+/* barra navigazione */
+.header-bg {
+    background-color: #B4D0E7;
+    height: 500px;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    position: sticky;
+    z-index: 1;
+    background-color: chartreuse;
+}
+
+.link-info {
+    height: 50%;
+    flex-basis: 50%;
+    background-color: cornflowerblue;
+    gap: 15px;
+}
+
+.link-support {
+    height: 50%;
+    flex-basis: 50%;
+    background-color: bisque;
+    gap: 15px;
+    justify-content: flex-end;
+}
+/* header main content */
+
+.header-main {
+    margin-top: 50px;
+    background-color: blueviolet;
+    height: 78%;
+}
+
+.img-prova {
+    height:100%;
+    width: 60%;
+    float: right;
+    background-color: aquamarine;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+.clearfix::after {
+    display: block;
+    clear: both;
+    content: '';
+}
+
+.box-test{
+    padding-top: 20px;
+    height: 171px;
+    width: 350px;
+    background-color: beige;
+}
+
+.buttons-text a {
+    display: inline-block;
+    background-color: brown;
+    padding: 10px 15px;
+    text-align: center;
+    width: 80%;
+    margin-bottom: 10px;
 }
