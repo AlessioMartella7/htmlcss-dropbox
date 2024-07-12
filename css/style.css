@@ -2,6 +2,7 @@
 
 :root {
     --maincolor: #0061FF;
+    --secondarycol: #fff;
 }
 /*---------------------- Reset--------------------- */
 *{
@@ -54,13 +55,23 @@ h1 {
     padding: 5px 10px;
  }
 
+.btn.btn-large {
+    padding: 10px 30px;
+} 
+
  .btn.btn-colored {
     color: #fff;
     background-color: var(--maincolor);
  }
 
+ .btn.btn-colored2 {
+    text-decoration: none;
+    color: #000;
+    background-color: var(--secondarycol);
+ }
+
 .br-bl {
-    border: 1px dashed black;
+    border: 1px solid black;
 }
 
 /* containers */ 
@@ -156,15 +167,15 @@ h1 {
 
 .row.cols-3 > .col {
 
-    min-height: 400px;
+    min-height: 80px;
     flex-basis: calc(100%/3 - 40px / 3);
     
 }
 
-/* sezione Trova partner */
+/* --------------sezione Trova partner ----------------*/
 
 .img-prov2 {
-    height: 400px;
+    min-height: 400px;
     flex-basis: 60%;
     background-color: aqua;
 }
@@ -173,8 +184,8 @@ h1 {
     background-color: cadetblue;
 }
 
-/* sezione Operazioni */
-.operazioni {
+/* ---------------------sezione Operazioni------------------ */
+#operazioni h2 {
     padding-bottom: 15px;
 }
 
@@ -200,4 +211,45 @@ h1 {
     padding: 30px 0;
 }
 
-/* sezione Partnership e clienti */
+/* -----------------sezione Partnership e clienti--------------- */
+
+
+.box {
+    flex-grow: 1;
+    flex-basis:50%;
+    min-height: 248px;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+}
+
+.box.box-big {
+    height: 100%;
+    padding: 25px;
+}
+
+.box .box-long{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 100%;
+    
+}
+
+.box img {
+    width: 40%;
+    
+}
+
+.box-big p {
+    margin: 30px 0;
+
+}   
+
+.box-big hr {
+    size: 1px;
+    width: 75px;
+    color: #fefefe;
+    margin: 30px 0;
+
+}
+
