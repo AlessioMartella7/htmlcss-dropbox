@@ -253,3 +253,7 @@ h1 {
 
 }
 
+.filter-white img{
+    filter:invert(1)
+}
+
