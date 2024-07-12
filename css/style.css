@@ -71,7 +71,8 @@ li {
     background-color: chartreuse;
 }
 
-.link-info {
+
+.nav-bar .row{
     align-items: center;
     height: 50%;
     flex-basis: 50%;
@@ -79,12 +80,8 @@ li {
     gap: 15px;
 }
 
-.link-support {
-    align-items: center;
-    height: 50%;
-    flex-basis: 50%;
-    background-color: bisque;
-    gap: 15px;
+.navbar-right {
+
     justify-content: flex-end;
 }
 /* header main content */
