@@ -49,6 +49,10 @@ li {
     margin-top: 100px;
 }
 
+.row.g-20 {
+    gap: 20px;
+}
+
 /* barra navigazione */
 .header-bg {
     background-color: #B4D0E7;
@@ -56,12 +60,14 @@ li {
 }
 
 .nav-bar {
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
     height: 60px;
-    position: sticky;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
     z-index: 1;
+    padding: 0 10px;
     background-color: chartreuse;
 }
 
@@ -127,21 +133,29 @@ li {
     background-color: chartreuse;
 }
 
-.disp-flex.row {
-    justify-content: center;
-    flex-wrap: wrap;   
-    gap: 20px;
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.col {
+.row > .col-30 {
+    flex-basis: 30%;
+}
 
-    height: 400px;
+.row > .col-70 {
+    flex-basis: 70%;
+}
+
+.row.col-grow > * {
+    flex-grow: 1;
+}
+
+.row.cols-3 > .col {
+
+    min-height: 400px;
     flex-basis: calc(100%/3 - 40px / 3);
     
-}
-
-.col:last-child{
-    flex-grow: 1;
 }
 
 /* sezione Trova partner */
