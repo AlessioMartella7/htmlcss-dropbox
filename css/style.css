@@ -16,6 +16,7 @@
 body{
     font-family: "Open Sans", sans-serif;
     color: black;
+    background-color: #fff;
 }
 
 header a {
@@ -43,6 +44,11 @@ h1 {
     font-weight: 800;
 }
 
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    
+}
 /* -------------------Utilities -----------------*/
 
 
@@ -73,8 +79,7 @@ h1 {
 .br-bl {
     border: 1px solid black;
 }
-
-/* containers */ 
+/* ------------------ */
 
 .container {
     max-width: 1000px;
@@ -96,6 +101,10 @@ h1 {
 
 .row.g-20 {
     gap: 20px;
+}
+
+.colored-link {
+    color: #3434F1;
 }
 
 /*------------- barra navigazione-------------- */
@@ -204,11 +213,15 @@ h1 {
 
 }
 
-.learn-text {
-    background-color: grey;
+.text {
     height: 200px;
-    line-height: 70px;
-    padding: 30px 0;
+    line-height: 50px;
+    padding: 10px 0;
+}
+
+.text h2 {
+    max-width: 600px;
+    margin-bottom: 25px;
 }
 
 /* -----------------sezione Partnership e clienti--------------- */
@@ -231,11 +244,13 @@ h1 {
 .box .box-long{
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     flex-basis: 100%;
 }
 
 .box-long h2 {
     color: #61082B;
+    max-width: 400px;
 }
 .box img {
     width: 40%;
@@ -247,9 +262,11 @@ h1 {
 
 }   
 
-.box-big .line {
-    width: 80px;
+.line {
     border: 0.5px solid #e3e3e79e ;
+}
+.box-big > .line {
+    width: 80px;
     margin: 40px 0;
 
 }
