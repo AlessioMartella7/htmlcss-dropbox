@@ -1,11 +1,16 @@
-/* Reset */
+/* -------------------Custom Props --------------- */
+
+:root {
+    --maincolor: #0061FF;
+}
+/*---------------------- Reset--------------------- */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* General */
+/* ----------------------General------------------ */
 
 body{
     font-family: "Open Sans", sans-serif;
@@ -25,11 +30,40 @@ footer a {
 li {
     list-style-type: none;
 }
-/* Utilities */
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 35px;
+    font-weight: 800;
+}
+
+/* -------------------Utilities -----------------*/
+
+
+/* buttons */
+
+.btn { padding: 10px 15px;
+
+}
+ .btn.btn-small {
+    padding: 5px 10px;
+ }
+
+ .btn.btn-colored {
+    color: #fff;
+    background-color: var(--maincolor);
+ }
 
 .br-bl {
     border: 1px dashed black;
 }
+
+/* containers */ 
 
 .container {
     max-width: 1000px;
@@ -53,13 +87,15 @@ li {
     gap: 20px;
 }
 
-/* barra navigazione */
+/*------------- barra navigazione-------------- */
+
 .header-bg {
     background-color: #B4D0E7;
-    height: 500px;
+    height: 700px;
+
 }
 
-.nav-bar {
+.navbar {
     align-items: center;
     height: 60px;
     position: fixed;
@@ -68,16 +104,16 @@ li {
     left: 0;
     z-index: 1;
     padding: 0 10px;
-    background-color: chartreuse;
+    background-color: #fff;
+    box-shadow: 0 1px 3px #f3f0f0;
 }
 
 
-.nav-bar .row{
+.navbar .row{
     align-items: center;
     height: 50%;
     flex-basis: 50%;
-    background-color: cornflowerblue;
-    gap: 15px;
+    gap: 25px;
 }
 
 .navbar-right {
@@ -86,46 +122,16 @@ li {
 }
 /* header main content */
 
-.header-main {
-    margin-top: 50px;
-    background-color: blueviolet;
-    height: 78%;
+#main-header {
+    padding-top: 100px;
 }
 
-.img-prova {
-    height:100%;
-    width: 60%;
-    float: right;
-    background-color: aquamarine;
-    position: relative;
-    top: 20px;
-    left: 20px;
+
+/* -------------Main content -------------- */
+
+#business {
+    margin-top: 150px;
 }
-
-.clearfix::after {
-    display: block;
-    clear: both;
-    content: '';
-}
-
-.box-test{
-    padding-top: 20px;
-    height: 171px;
-    width: 350px;
-    background-color: beige;
-}
-
-.buttons-text a {
-    display: inline-block;
-    background-color: brown;
-    padding: 10px 15px;
-    text-align: center;
-    width: 80%;
-    margin-bottom: 10px;
-}
-
-/* Main content  */
-
 .bus-plan {
     background-color: chartreuse;
 }
