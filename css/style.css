@@ -49,6 +49,10 @@ h2 {
     font-weight: 700;
     
 }
+
+h3 {
+    font-size: 25px;
+}
 /* -------------------Utilities -----------------*/
 
 
@@ -68,6 +72,7 @@ h2 {
  .btn.btn-colored {
     color: #fff;
     background-color: var(--maincolor);
+    text-decoration: none;
  }
 
  .btn.btn-colored2 {
@@ -109,9 +114,16 @@ h2 {
     padding: 20px;
 }
 
+.txt-cnt {
+    text-align: center;
+}
 
 .colored-link {
     color: #3434F1;
+}
+
+.fnt-weight-8{
+    font-weight: 800;
 }
 
 .line {
@@ -163,10 +175,10 @@ h2 {
     margin-top: 150px;
 }
 
-.bus-plan {
-    background-color: chartreuse;
+.col-header {
+    margin-bottom: 30px;
+    line-height: 3;
 }
-
 .row {
     display: flex;
     flex-direction: row;
@@ -199,7 +211,7 @@ h2 {
     padding: 10px;
 }
 
- .col-title{
+.col-content > .col-title{
     line-height: 150%;
  }
 
@@ -216,9 +228,12 @@ h2 {
 .col-bottom .fa-check {
     color: #0061FF;
 }
+.col-bottom li:last-of-type{
+    margin-bottom: 45px;
+}
+.col-horiz h3 + p{
+    margin-bottom: 50px;
 
-ul a.btn {
-    text-decoration: none;
 }
 #business a.btn {
     display: block;
