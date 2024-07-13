@@ -58,7 +58,10 @@ h3 {
 
 /* buttons */
 
-.btn { padding: 10px 15px;
+.btn {
+    padding: 10px 15px;
+    text-decoration: none;
+    display: inline-block;
 
 }
  .btn.btn-small {
@@ -72,11 +75,11 @@ h3 {
  .btn.btn-colored {
     color: #fff;
     background-color: var(--maincolor);
-    text-decoration: none;
+
  }
 
  .btn.btn-colored2 {
-    text-decoration: none;
+
     color: #000;
     background-color: var(--secondarycol);
  }
@@ -98,6 +101,15 @@ h3 {
 
 .disp-flex {
     display: flex;
+}
+
+/* Spacing */ 
+.mrb-30 {
+    margin-bottom: 30px;
+}  
+
+.mrb-70 {
+    margin-bottom: 70px;
 }
 .mrgt-50 {
     margin-top: 50px;
@@ -167,7 +179,6 @@ h3 {
 #main-header {
     padding-top: 100px;
 }
-
 
 /* -------------Sezione Business plan -------------- */
 
