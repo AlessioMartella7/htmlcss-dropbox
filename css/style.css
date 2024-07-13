@@ -94,21 +94,28 @@ h2 {
 .disp-flex {
     display: flex;
 }
-
-.mrgt-l{
+.mrgt-50 {
+    margin-top: 50px;
+}
+.mrgt-l {
     margin-top: 100px;
 }
 
 .row.g-20 {
     gap: 20px;
 }
+ 
+.pad-20{
+    padding: 20px;
+}
+
 
 .colored-link {
     color: #3434F1;
 }
 
 .line {
-    border: 0.5px solid #e3e3e79e ;
+    border: 1px solid #e3e3e79e ;
 }
 /*------------- barra navigazione-------------- */
 
@@ -150,11 +157,12 @@ h2 {
 }
 
 
-/* -------------Main content -------------- */
+/* -------------Sezione Business plan -------------- */
 
 #business {
     margin-top: 150px;
 }
+
 .bus-plan {
     background-color: chartreuse;
 }
@@ -184,8 +192,45 @@ h2 {
     
 }
 
-/* --------------sezione Trova partner ----------------*/
+.icona {
+    display:block;
+    text-align: center;
+    border-bottom: 1px solid;
+    padding: 10px;
+}
 
+ .col-title{
+    line-height: 150%;
+ }
+
+.col-title h3 {
+    margin-bottom: 20px;
+}
+.col-content li {
+    margin-top: 20px;
+}
+
+.col-content ul{
+    padding: 0 25px;
+}
+.col-bottom .fa-check {
+    color: #0061FF;
+}
+
+ul a.btn {
+    text-decoration: none;
+}
+#business a.btn {
+    display: block;
+    margin-bottom: 15px;
+} 
+
+ul .line{
+
+    max-width: 80px;
+    margin: 40px 0;
+}
+/* --------------sezione Trova partner ----------------*/
 .img-prov2 {
     min-height: 400px;
     flex-basis: 60%;
