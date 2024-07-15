@@ -3,7 +3,7 @@
 :root {
     --maincolor: #0061FF;
     --secondarycol: #fff;
-    --dgray: #5252539e ;
+    --dgray: gray ;
 }
 /*---------------------- Reset--------------------- */
 *{
@@ -272,7 +272,6 @@ h3 {
     flex-wrap: nowrap;
     min-height: 80px;
     flex-basis: calc(100% /5 - 80px / 5);
-    border: 1px dashed white;
 }
 
 .icona {
@@ -504,3 +503,44 @@ ul .line{
 
 /* -----------FOOTER------------- */
 
+.link-list li {
+    margin-bottom: 15px;
+}
+
+/* barra lingua */
+
+.lang-bar {
+    display: inline-block;
+    color: gray;
+    margin-top: 100px;
+    padding: 50px 0;
+}
+
+.lang-bar span::before::after {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+
+}
+
+.lang-bar span::before {
+    font: var(--fa-font-solid);
+    content: '\f57d';
+    margin-right: 5px;
+}
+
+.lang-bar span::after {
+    font: var(--fa-font-solid);
+    content: '\f0d8';
+    margin-left: 5px;
+}
+
+.lang-bar .border-top {
+    height: 1px;
+    width: 150px;
+    background-color: #fff;
+    margin-bottom: 50px;
+    
+}
+
+ 
