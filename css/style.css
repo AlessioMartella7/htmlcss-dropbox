@@ -111,6 +111,11 @@ h3 {
 .btn.btn-colored:hover {
     background-color: rgba(0, 98, 255, 0.377);
 }
+
+.btn.btn-colored2:hover {
+    background-color: rgba(192, 187, 187, 0.5);
+}
+
 /* ---------------------------------- */
 .container {
     max-width: 1000px;
@@ -537,19 +542,6 @@ ul .line{
     justify-content: space-between;
     align-content: center;
     padding: 30px 0;
-}
-
-
-
-.text-question p::after {
-    display: inline-block;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-}
-
-.text-1.angle-up::after {
-    font: var(--fa-font-solid);
-    content: '\f106';
 }
 
 .text-1 .fa-angle-up{
