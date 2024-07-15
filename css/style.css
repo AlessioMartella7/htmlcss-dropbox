@@ -218,9 +218,31 @@ h3 {
     gap: 25px;
 }
 
-.navbar-right {
+.row.navbar-left {
+    height: 100%;
+}
+
+.row .navbar-right {
+    height: 100%;
     justify-content: flex-end;
 }
+
+
+.navbar li {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid transparent
+}
+
+.navbar-left :nth-child(1n+2):hover {
+    border-bottom: 2px solid;
+}
+
+.navbar-right li:not(:last-child):hover {
+    border-bottom: 2px solid;
+}
+
 /* header main content */
 
 #main-header {
