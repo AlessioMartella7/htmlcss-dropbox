@@ -274,6 +274,7 @@ h3 {
     flex-basis: calc(100% /5 - 80px / 5);
     border: 1px dashed white;
 }
+
 .icona {
     display:block;
     text-align: center;
@@ -281,6 +282,41 @@ h3 {
     padding: 10px;
 }
 
+.icons li {
+    display: flex;
+    gap: 5px;
+    align-items: baseline;
+    margin-bottom: 10px;
+}
+
+/* before icons  */
+.icons li::before {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+.icons li.user::before {
+    font: var(--fa-font-solid);
+    content: '\f007';
+}
+
+.icons li.folder::before {
+    font: var(--fa-font-solid);
+    content:'\f07b';
+}
+
+.icons li.share::before {
+    font: var(--fa-font-solid);
+    content:'\f1e0';
+}
+.icons li.check::before {
+    color: var(--maincolor);
+    font: var(--fa-font-solid);
+    content:'\f00c';
+}
+
+/* ----------------------------- */
 .col-content > .col-title{
     line-height: 200%;
  }
